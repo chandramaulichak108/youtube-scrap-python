@@ -138,7 +138,7 @@ if channel!="":
         if matches:
             j = json.loads(matches[0])
             try:
-                return(j['header']['c4TabbedHeaderRenderer']['subscriberCountText']['runs'][0]['text'])
+                return(j['header']['c4TabbedHeaderRenderer']['subscriberCountText']['runs'][0]['text'].split()[0])
             except:
                 return ""
         return ""
