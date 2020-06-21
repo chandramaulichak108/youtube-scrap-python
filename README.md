@@ -2,14 +2,14 @@
 
 It is a command-line python program, which has 2 flags:
 
-'''
+``` python 
 -u,--url   The video url
 -c,--channel   A youtube channel
-'''
+```
 
 You can use the video url to get video info
 
-'''
+```
 $ python youscrap.py -u "https://www.youtube.com/watch?v=D__UaR5MQao&t" 
 Channel: 3Blue1Brown 
 Subscribers: 2.89M 
@@ -19,11 +19,11 @@ Likes: 19,918
 Dislikes: 373 
 Upload Date\Time: 14 May 2020 
 Channel Link: https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw
-'''
+```
 
 You can also use the channel link to get channel info
 
-'''
+```
 $ python youscrap.py -c "https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw"
 Channel Name: 3Blue1Brown 
 Total subscriber: 2.89M
@@ -45,7 +45,7 @@ Twitter: https://www.youtube.com/redirect?redir_token=dBNOuykzQN39iSuDLNvaqfYrDP
 Reddit: https://www.youtube.com/redirect?redir_token=dBNOuykzQN39iSuDLNvaqfYrDPR8MTU5MjgzNzUyNUAxNTkyNzUxMTI1&event=channel_banner&q=https%3A%2F%2Fwww.reddit.com%2Fr%2F3blue1brown 
 
 Instagram: https://www.youtube.com/redirect?redir_token=dBNOuykzQN39iSuDLNvaqfYrDPR8MTU5MjgzNzUyNUAxNTkyNzUxMTI1&event=channel_banner&q=https%3A%2F%2Fwww.instagram.com%2F3blue1brown_animations%2F 
-'''
+```
 
 
 Enjoy !!
