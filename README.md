@@ -2,8 +2,8 @@
 
 It is a command-line python program, which has 2 flags:
 
-``` python 
--u,--url   The video url
+```  
+-u,--url       The video url
 -c,--channel   A youtube channel
 ```
 
