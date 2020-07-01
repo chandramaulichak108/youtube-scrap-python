@@ -26,8 +26,8 @@ You can also use the channel link to get channel info
 ```
 $ python youscrap.py -c "https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw"
 Channel Name: 3Blue1Brown 
-Total subscriber: 2.89M
-Total Views: 143,311,842 
+Total subscriber: 2.91M
+Total Views: 144,302,321 
 Joined Date: 3 Mar 2015 
 Country: United States 
 Description:
@@ -36,15 +36,16 @@ Description:
 Contact and FAQ: https://www.3blue1brown.com/faq
 
 Social Media Handles
-Home page: /redirect?redir_token=dBNOuykzQN39iSuDLNvaqfYrDPR8MTU5MjgzNzUyNUAxNTkyNzUxMTI1&event=channel_banner&q=https%3A%2F%2Fwww.3blue1brown.com 
+Home page: https://www.3blue1brown.com 
 
-Patreon: https://www.youtube.com/redirect?redir_token=dBNOuykzQN39iSuDLNvaqfYrDPR8MTU5MjgzNzUyNUAxNTkyNzUxMTI1&event=channel_banner&q=https%3A%2F%2Fwww.patreon.com%2F3blue1brown 
+Patreon: https://www.patreon.com/3blue1brown 
 
-Twitter: https://www.youtube.com/redirect?redir_token=dBNOuykzQN39iSuDLNvaqfYrDPR8MTU5MjgzNzUyNUAxNTkyNzUxMTI1&event=channel_banner&q=https%3A%2F%2Fwww.twitter.com%2F3blue1brown 
+Twitter: https://www.twitter.com/3blue1brown 
 
-Reddit: https://www.youtube.com/redirect?redir_token=dBNOuykzQN39iSuDLNvaqfYrDPR8MTU5MjgzNzUyNUAxNTkyNzUxMTI1&event=channel_banner&q=https%3A%2F%2Fwww.reddit.com%2Fr%2F3blue1brown 
+Reddit: https://www.reddit.com/r/3blue1brown 
 
-Instagram: https://www.youtube.com/redirect?redir_token=dBNOuykzQN39iSuDLNvaqfYrDPR8MTU5MjgzNzUyNUAxNTkyNzUxMTI1&event=channel_banner&q=https%3A%2F%2Fwww.instagram.com%2F3blue1brown_animations%2F 
+Instagram: https://www.instagram.com/3blue1brown_animations/
+
 ```
 
 
