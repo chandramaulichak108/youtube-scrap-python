@@ -4,6 +4,9 @@ import json
 import requests
 import getopt
 
+def usage():
+    print("\nThis is the usage function\n")
+    print('Usage: '+sys.argv[0]+' -i <file1> [option]')
 
 try:
     opt=getopt.getopt(sys.argv[1:],'u:c:',["url=","channel="])
@@ -143,6 +146,26 @@ if channel!="":
                 return ""
         return ""
     
+    def update_link(link):
+        if link.find('youtube')!=-1:
+            #print("here")
+            return link
+        else:
+            try:
+                if link.find("https")!=-1:
+                    #print("link worked",link)
+                    link=link[link.find("https"):]
+                    link=link[:link.find("&")]
+                    link=link.replace("%2F","/")
+                    link=link.replace('%3A',":")
+                    return link
+                else:
+                    return ""
+            except:
+                return ""
+
+
+
     def get_social(html):
         matches = re.findall(r'window\["ytInitialData"\] = (.*\}\]\}\}\});', html, re.IGNORECASE | re.DOTALL)
         soc_link={}
@@ -151,10 +174,12 @@ if channel!="":
             try:
                 if 'primaryLinks' in j['header']['c4TabbedHeaderRenderer']['headerLinks']['channelHeaderLinksRenderer'].keys():
                     for c in j['header']['c4TabbedHeaderRenderer']['headerLinks']['channelHeaderLinksRenderer']['primaryLinks']:
-                        soc_link[c['title']['simpleText']]=c['navigationEndpoint']['urlEndpoint']['url']
+                        soc_link[c['title']['simpleText']]=update_link(c['navigationEndpoint']['urlEndpoint']['url'])
+                        
+
                 if 'secondaryLinks' in j['header']['c4TabbedHeaderRenderer']['headerLinks']['channelHeaderLinksRenderer'].keys():
                     for c in j['header']['c4TabbedHeaderRenderer']['headerLinks']['channelHeaderLinksRenderer']['secondaryLinks']:
-                        soc_link[c['title']['simpleText']]="https://www.youtube.com"+c['navigationEndpoint']['urlEndpoint']['url']  
+                        soc_link[c['title']['simpleText']]=update_link(c['navigationEndpoint']['urlEndpoint']['url'])
             except:
                 return ""
         return soc_link
